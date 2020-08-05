@@ -1,19 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <img alt="Vue logo" src="./assets/logoPUC.png">
+        <Header headerMsg="Hellow world in Vue"/>
+        <NavBar :menus="menus"/>
+        <SideBar :menus="menus"/>
+        <Articles :articles="articles"/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import Header from './components/Header.vue';
+    import NavBar from './components/NavBar.vue';
+    import SideBar from './components/Side.vue';
+    import Articles from './components/Articles.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            Header,
+            NavBar,
+            SideBar,
+            Articles
+        },
+        data() {
+            return {
+                menus: [
+                    { id: 1, descricao: "menu01"},
+                    { id: 2, descricao: "menu02"},
+                    { id: 3, descricao: "menu03"},
+                    { id: 4, descricao: "menu04"},
+                    { id: 5, descricao: "menu05"}
+                ],
+                articles: [
+                    { id: 1, descricao: "artigo01"},
+                    { id: 2, descricao: "artigo02"},
+                    { id: 3, descricao: "artigo03"},
+                    { id: 4, descricao: "artigo04"},
+                    { id: 5, descricao: "artigo05"}
+                ]
+            }
+        }
+    }
 </script>
 
 <style>
