@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <article>
         <h1>Articles</h1>
         <ul>
             <li v-for="articleArray in articles" v-bind:key="articleArray.id">
                 <ArticleItem :article="articleArray"/>
             </li>
         </ul>
-    </div>
+    </article>
 </template>
 
 <script>
@@ -25,13 +25,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    h1 {
-        color: darkgreen;
-    }
-    ul{
-        list-style-type:none;
-    }
-    li {
-        color:red;
+    article {
+        background-color: gray;
     }
 </style>

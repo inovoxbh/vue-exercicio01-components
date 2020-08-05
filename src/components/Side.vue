@@ -25,13 +25,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    h1 {
-        color: darkgreen;
-    }
-    ul{
-        list-style-type:none;
-    }
-    li {
-        color:red;
+    div {
+        background-color: lightgreen;
     }
 </style>

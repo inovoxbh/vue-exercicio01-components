@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logoPUC.png">
-        <Header headerMsg="Hellow world in Vue"/>
+        <Header headerMsg="Exercício 01 - Vue - Componentização"/>
         <NavBar :menus="menus"/>
         <SideBar :menus="menus"/>
         <Articles :articles="articles"/>
@@ -44,12 +44,26 @@
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+    }
+
+    h1 {
+        color: darkgreen;
+        font-weight: bold;
+    }
+
+    p {
+        color: black;
+    }
+
+    ul{
+        list-style-type:none;
+    }
+
 </style>
